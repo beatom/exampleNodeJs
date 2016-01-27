@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:postman="http://postman" postman:name="My WADL API" postman:guid="83j344-34hs8a-9jhd09-sd98u3-asd83d">
+ <resources base="http://athena.dev.firestitch.com/api">
+  <resource path="app" wsdl="http://athena.dev.firestitch.com/api/?wsdl" postman:name="App">
+   <resource path="init" postman:name="Init">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="auth" wsdl="http://athena.dev.firestitch.com/api/?wsdl" postman:name="Auth">
+   <resource path="login" postman:name="Login">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="email" type="xsd:string" style="query"></param>
+      <param name="password" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="token" postman:name="Token">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="impersonate" postman:name="Impersonate">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="guid" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="logout" postman:name="Logout">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="builders" wsdl="http://athena.dev.firestitch.com/api/builder?wsdl" postman:name="Builders">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="projects" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="builder_id" postman:name="Builder_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="projects" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="builder_id" postman:name="Builder_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="end_day" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="builder_id" postman:name="Builder_id">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="end_day" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="builder_id" postman:name="Builder_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="builder_id/image" postman:name="Builder_id/image">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="file" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="deficiencies" wsdl="http://athena.dev.firestitch.com/api/deficiency?wsdl" postman:name="Deficiencies">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="deficiency_id" postman:name="Deficiency_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="deficiency_id" postman:name="Deficiency_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="form_id" type="xsd:string" style="query"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+      <param name="trade_catagory_id" type="xsd:string" style="query"></param>
+      <param name="suite_id" type="xsd:string" style="query"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="description" type="xsd:string" style="query"></param>
+      <param name="builder_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="form_id" type="xsd:string" style="query"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+      <param name="trade_catagory_id" type="xsd:string" style="query"></param>
+      <param name="suite_id" type="xsd:string" style="query"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="description" type="xsd:string" style="query"></param>
+      <param name="builder_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="deficiency_id" postman:name="Deficiency_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="documents" wsdl="http://athena.dev.firestitch.com/api/document?wsdl" postman:name="Documents">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="document_id" postman:name="Document_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="document_id" postman:name="Document_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="reference" type="xsd:string" style="query"></param>
+      <param name="filename" type="xsd:string" style="query"></param>
+      <param name="suite_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="reference" type="xsd:string" style="query"></param>
+      <param name="filename" type="xsd:string" style="query"></param>
+      <param name="suite_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="document_id" postman:name="Document_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="forms" wsdl="http://athena.dev.firestitch.com/api/form?wsdl" postman:name="Forms">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="form_id" postman:name="Form_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="form_id" postman:name="Form_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="type" type="xsd:string" style="query"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="suite_id" type="xsd:string" style="query"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="type" type="xsd:string" style="query"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="suite_id" type="xsd:string" style="query"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="form_id" postman:name="Form_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="formtypes" wsdl="http://athena.dev.firestitch.com/api/form_type?wsdl" postman:name="Formtypes">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="form_type_id" postman:name="Form_type_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="form_type_id" postman:name="Form_type_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="type" type="xsd:string" style="query"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="type" type="xsd:string" style="query"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="form_type_id" postman:name="Form_type_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="me" wsdl="http://athena.dev.firestitch.com/api/?wsdl" postman:name="Me">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="first_name" type="xsd:string" style="query"></param>
+      <param name="last_name" type="xsd:string" style="query"></param>
+      <param name="email" type="xsd:string" style="query"></param>
+      <param name="company" type="xsd:string" style="query"></param>
+      <param name="password" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="avatar" postman:name="Avatar">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="file" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="password" wsdl="http://athena.dev.firestitch.com/api/?wsdl" postman:name="Password">
+   <resource path="request" postman:name="Request">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="email" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="reset" postman:name="Reset">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="password" type="xsd:string" style="query"></param>
+      <param name="code" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="projectformtypes" wsdl="http://athena.dev.firestitch.com/api/project_form_type?wsdl" postman:name="Projectformtypes">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_form_type_id" postman:name="Project_form_type_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_form_type_id" postman:name="Project_form_type_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+      <param name="form_type_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+      <param name="form_type_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_form_type_id" postman:name="Project_form_type_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="projects" wsdl="http://athena.dev.firestitch.com/api/project?wsdl" postman:name="Projects">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="users" type="xsd:string" style="query"></param>
+      <param name="form_types" type="xsd:string" style="query"></param>
+      <param name="trades" type="xsd:string" style="query"></param>
+      <param name="titles" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_id" postman:name="Project_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="users" type="xsd:string" style="query"></param>
+      <param name="form_types" type="xsd:string" style="query"></param>
+      <param name="trades" type="xsd:string" style="query"></param>
+      <param name="titles" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_id" postman:name="Project_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="address1" type="xsd:string" style="query"></param>
+      <param name="address2" type="xsd:string" style="query"></param>
+      <param name="city" type="xsd:string" style="query"></param>
+      <param name="region" type="xsd:string" style="query"></param>
+      <param name="zip" type="xsd:string" style="query"></param>
+      <param name="country" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="address1" type="xsd:string" style="query"></param>
+      <param name="address2" type="xsd:string" style="query"></param>
+      <param name="city" type="xsd:string" style="query"></param>
+      <param name="region" type="xsd:string" style="query"></param>
+      <param name="zip" type="xsd:string" style="query"></param>
+      <param name="country" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_id" postman:name="Project_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_id/image" postman:name="Project_id/image">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="feature" type="xsd:string" style="query"></param>
+      <param name="signature" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="projecttitles" wsdl="http://athena.dev.firestitch.com/api/project_title?wsdl" postman:name="Projecttitles">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_title_id" postman:name="Project_title_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_title_id" postman:name="Project_title_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_title_id" postman:name="Project_title_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="projecttrades" wsdl="http://athena.dev.firestitch.com/api/project_trade?wsdl" postman:name="Projecttrades">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_trade_id" postman:name="Project_trade_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_trade_id" postman:name="Project_trade_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+      <param name="trade_id" type="xsd:string" style="query"></param>
+      <param name="trade_category_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+      <param name="trade_id" type="xsd:string" style="query"></param>
+      <param name="trade_category_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_trade_id" postman:name="Project_trade_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="projectusers" wsdl="http://athena.dev.firestitch.com/api/project_user?wsdl" postman:name="Projectusers">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_user_id" postman:name="Project_user_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_user_id" postman:name="Project_user_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+      <param name="user_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+      <param name="user_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="project_user_id" postman:name="Project_user_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="register" wsdl="http://athena.dev.firestitch.com/api/?wsdl" postman:name="Register">
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="first_name" type="xsd:string" style="query"></param>
+      <param name="last_name" type="xsd:string" style="query"></param>
+      <param name="email" type="xsd:string" style="query"></param>
+      <param name="company" type="xsd:string" style="query"></param>
+      <param name="password" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="suites" wsdl="http://athena.dev.firestitch.com/api/suite?wsdl" postman:name="Suites">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="suite_id" postman:name="Suite_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="suite_id" postman:name="Suite_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+      <param name="builder_id" type="xsd:string" style="query"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="enrolment_number" type="xsd:string" style="query"></param>
+      <param name="vendor_number" type="xsd:string" style="query"></param>
+      <param name="street_number" type="xsd:string" style="query"></param>
+      <param name="street_name" type="xsd:string" style="query"></param>
+      <param name="suite_number" type="xsd:string" style="query"></param>
+      <param name="city" type="xsd:string" style="query"></param>
+      <param name="postal_code" type="xsd:string" style="query"></param>
+      <param name="lot" type="xsd:string" style="query"></param>
+      <param name="plan" type="xsd:string" style="query"></param>
+      <param name="municipality" type="xsd:string" style="query"></param>
+      <param name="owner_type" type="xsd:string" style="query"></param>
+      <param name="owner_first_name" type="xsd:string" style="query"></param>
+      <param name="owner_last_name" type="xsd:string" style="query"></param>
+      <param name="owner_organization_name" type="xsd:string" style="query"></param>
+      <param name="warranty_start_date" type="xsd:string" style="query"></param>
+      <param name="final_selling_price" type="xsd:string" style="query"></param>
+      <param name="contact_email" type="xsd:string" style="query"></param>
+      <param name="after_sales_service_contact" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+      <param name="builder_id" type="xsd:string" style="query"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="enrolment_number" type="xsd:string" style="query"></param>
+      <param name="vendor_number" type="xsd:string" style="query"></param>
+      <param name="street_number" type="xsd:string" style="query"></param>
+      <param name="street_name" type="xsd:string" style="query"></param>
+      <param name="suite_number" type="xsd:string" style="query"></param>
+      <param name="city" type="xsd:string" style="query"></param>
+      <param name="postal_code" type="xsd:string" style="query"></param>
+      <param name="lot" type="xsd:string" style="query"></param>
+      <param name="plan" type="xsd:string" style="query"></param>
+      <param name="municipality" type="xsd:string" style="query"></param>
+      <param name="owner_type" type="xsd:string" style="query"></param>
+      <param name="owner_first_name" type="xsd:string" style="query"></param>
+      <param name="owner_last_name" type="xsd:string" style="query"></param>
+      <param name="owner_organization_name" type="xsd:string" style="query"></param>
+      <param name="warranty_start_date" type="xsd:string" style="query"></param>
+      <param name="final_selling_price" type="xsd:string" style="query"></param>
+      <param name="contact_email" type="xsd:string" style="query"></param>
+      <param name="after_sales_service_contact" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="suite_id" postman:name="Suite_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="tradecategories" wsdl="http://athena.dev.firestitch.com/api/trade_category?wsdl" postman:name="Tradecategories">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="trade_category_id" postman:name="Trade_category_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="trade_category_id" postman:name="Trade_category_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="color" type="xsd:string" style="query"></param>
+      <param name="abreviation" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="color" type="xsd:string" style="query"></param>
+      <param name="abreviation" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="trade_category_id" postman:name="Trade_category_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="tradeevents" wsdl="http://athena.dev.firestitch.com/api/trade_event?wsdl" postman:name="Tradeevents">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="trade_event_id" postman:name="Trade_event_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="trade_event_id" postman:name="Trade_event_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="start_date" type="xsd:string" style="query"></param>
+      <param name="end_date" type="xsd:string" style="query"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+      <param name="trade_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="start_date" type="xsd:string" style="query"></param>
+      <param name="end_date" type="xsd:string" style="query"></param>
+      <param name="project_id" type="xsd:string" style="query"></param>
+      <param name="trade_id" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="trade_event_id" postman:name="Trade_event_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="trades" wsdl="http://athena.dev.firestitch.com/api/trade?wsdl" postman:name="Trades">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="trade_id" postman:name="Trade_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="trade_id" postman:name="Trade_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="address1" type="xsd:string" style="query"></param>
+      <param name="address2" type="xsd:string" style="query"></param>
+      <param name="city" type="xsd:string" style="query"></param>
+      <param name="region" type="xsd:string" style="query"></param>
+      <param name="zip" type="xsd:string" style="query"></param>
+      <param name="country" type="xsd:string" style="query"></param>
+      <param name="first_name" type="xsd:string" style="query"></param>
+      <param name="last_name" type="xsd:string" style="query"></param>
+      <param name="phone" type="xsd:string" style="query"></param>
+      <param name="email" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="address1" type="xsd:string" style="query"></param>
+      <param name="address2" type="xsd:string" style="query"></param>
+      <param name="city" type="xsd:string" style="query"></param>
+      <param name="region" type="xsd:string" style="query"></param>
+      <param name="zip" type="xsd:string" style="query"></param>
+      <param name="country" type="xsd:string" style="query"></param>
+      <param name="first_name" type="xsd:string" style="query"></param>
+      <param name="last_name" type="xsd:string" style="query"></param>
+      <param name="phone" type="xsd:string" style="query"></param>
+      <param name="email" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="trade_id" postman:name="Trade_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="trade_id/image" postman:name="Trade_id/image">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="file" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+  <resource path="users" wsdl="http://athena.dev.firestitch.com/api/user?wsdl" postman:name="Users">
+   <resource path="" postman:name="">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="projects" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="user_id" postman:name="User_id">
+    <method name="GET">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="projects" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="user_id" postman:name="User_id">
+    <method name="PUT">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="email" type="xsd:string" style="query"></param>
+      <param name="password" type="xsd:string" style="query"></param>
+      <param name="first_name" type="xsd:string" style="query"></param>
+      <param name="last_name" type="xsd:string" style="query"></param>
+      <param name="phone" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="" postman:name="">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="state" type="xsd:string" style="query"></param>
+      <param name="name" type="xsd:string" style="query"></param>
+      <param name="email" type="xsd:string" style="query"></param>
+      <param name="password" type="xsd:string" style="query"></param>
+      <param name="first_name" type="xsd:string" style="query"></param>
+      <param name="last_name" type="xsd:string" style="query"></param>
+      <param name="phone" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="user_id" postman:name="User_id">
+    <method name="DELETE">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+     </request>
+    </method>
+   </resource>
+   <resource path="user_id/avatar" postman:name="User_id/avatar">
+    <method name="POST">
+     <request>
+      <param name="api-key" type="xsd:string" style="header" default="{{api-key}}"></param>
+      <param name="file" type="xsd:string" style="query"></param>
+     </request>
+    </method>
+   </resource>
+  </resource>
+ </resources>
+</application>
