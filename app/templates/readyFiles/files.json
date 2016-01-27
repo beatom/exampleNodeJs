@@ -1,0 +1,116 @@
+[
+  {
+    "base": "packages/angular-cryptography/",
+    "dest": "packages",
+    "include": true,
+    "module": "mdo-angular-cryptography",
+    "files": [
+      {"name": "mdo-angular-cryptography.js"}
+    ]
+  },
+
+  {
+    "base": "packages/cryptojslib",
+    "dest": "packages/cryptojslib",
+    "files": [
+      {"name": "components"}
+    ]
+  },
+
+  {
+    "base": "directives",
+    "dest": "scripts/directives",
+    "include": true,
+    "files": [
+      {"name": "alerts.js"},
+      {"name": "footer.js"},
+      {"name": "lister.js"},
+      {"name": "nav.js"},
+      {"name": "sidenav.js"},
+      {"name": "subnav.js"}
+    ]
+  },
+
+  {
+    "base": "config",
+    "dest": "config",
+    "include": true,
+    "module": "config",
+    "files": [
+      {"name": "config.js"}
+    ]
+  },
+
+  {
+    "base": "services",
+    "dest": "scripts/services",
+    "include": true,
+    "files": [
+      {"name": "access.js"},
+      {"name": "alert.js"},
+      {"name": "api.js"},
+      {"name": "app.js"},
+      {"name": "auth.js"},
+      {"name": "config.js"},
+      {"name": "deficiencies.js"},
+      {"name": "googlegeocode.js"},
+      {"name": "googleplaces.js"},
+      {"name": "history.js"},
+      {"name": "me.js"},
+      {"name": "passwords.js"},
+      {"name": "register.js"},
+      {"name": "session.js"},
+      {"name": "store.js"},
+      {"name": "users.js"},
+      {"name": "validate.js"}
+    ]
+  },
+
+
+  {
+    "base": "views",
+    "dest": "views",
+    "files": [
+      {"name": "404.html"}
+    ]
+  },
+
+  {
+    "base": "views/directives",
+    "dest": "views/directives",
+    "files": [
+      {"name": "alerts.html"},
+      {"name": "footer.html"},
+      {"name": "lister.html"},
+      {"name": "lister-actions.html"},
+      {"name": "nav.html"},
+      {"name": "sidenav.html"},
+      {"name": "subnav.html"}
+    ]
+  },
+
+  {
+    "base": "style/directives/lister",
+    "dest": "style/directives/lister",
+    "css": true,
+    "files": [
+      {"name": "_lister.css"},
+      {"name": "ie.css"},
+      {"name": "print.css"},
+      {"name": "screen.css"}
+    ]
+  },
+
+  {
+    "base": "style/globals",
+    "dest": "style/globals",
+    "css": true,
+    "files": [
+      {"name": "_elements.css"},
+      {"name": "_icons.css"},
+      {"name": "_layouts.css"},
+      {"name": "_variables.css"},
+      {"name": "_vendors.css"}
+    ]
+  }
+]

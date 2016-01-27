@@ -1,0 +1,52 @@
+/* line 5, ../sass/_elements.scss */
+.md-button.full-width {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 11, ../sass/_elements.scss */
+.userpic-default {
+  height: 90px;
+  width: 90px;
+  background-color: #DDD;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* line 21, ../sass/_elements.scss */
+.userpic-default .material-icons {
+  font-size: 110px;
+  display: inline-block;
+  margin-left: -10px;
+  color: #334;
+}
+
+/* line 29, ../sass/_elements.scss */
+md-card md-card-content {
+  padding: 16px 32px;
+}
+/* line 32, ../sass/_elements.scss */
+md-card md-card-content > h3.md-title {
+  margin: 16px 0;
+}
+/* line 36, ../sass/_elements.scss */
+md-card md-card-content > p {
+  font-weight: 400;
+  letter-spacing: 0.010em;
+  line-height: 1.6em;
+  margin: 0.8em 0 1.6em;
+}
+/* line 43, ../sass/_elements.scss */
+md-card md-card-content .card-header {
+  padding-bottom: 1px;
+}
+
+/* line 48, ../sass/_elements.scss */
+.normal-content {
+  margin-top: 14px;
+}
+
+/* line 52, ../sass/_elements.scss */
+[layout="row"] > md-card.auth-card[flex] {
+  max-width: 420px;
+  margin-top: 60px;
+}

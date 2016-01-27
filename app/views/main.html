@@ -1,0 +1,63 @@
+<div class="jumbotron">
+    <h1 class="md-title">Code Generator</h1>
+    <div class="url-container">
+        <md-input-container flex>
+            <label class="url-label" for="wadl-input">Path to wadl</label>
+            <input id="wadl-input" ng-model="paths.wadl">
+        </md-input-container>
+        <md-input-container flex>
+            <label class="url-label" for="server-input">Path to generator service</label>
+            <input id="server-input" ng-model="paths.server">
+        </md-input-container>
+        <md-input-container flex>
+            <label class="url-label" for="project-input">Local path to project</label>
+            <input id="project-input" ng-model="paths.project">
+        </md-input-container>
+    </div>
+
+    <p>
+        <md-button class="md-raised md-primary" ng-click="wadlProceed()">Go</md-button>
+    </p>
+</div>
+
+<div ng-show="wadlObject">
+    <md-list ng-cloak>
+        <h2 class="md-no-sticky">Resources</h2>
+        <span ng-repeat="object in wadlObject.resource">
+            <md-list-item class="md-3-line">
+                <div class="md-list-item-text" layout="column">
+                    <h3 ng-bind="(object._path | capitalize)"></h3>
+                    <md-checkbox class="md-secondary is-selected" ng-disabled="object.disabled" ng-model="object.selected"></md-checkbox>
+                </div>
+            </md-list-item>
+            <div class="md-list-item-text is-empty" ng-show="object.selected">
+                <p>Empty</p>
+                <md-checkbox class="md-secondary" ng-model="object.empty"></md-checkbox>
+            </div>
+            <spoiler title="Method list" class="spoiler">
+                <md-list-item ng-repeat="resource in object.resource">
+                    <p ng-bind="wadlObject._base + '/' + object._path + '/' + resource._path + '(method' + resource.method._name + ')'"></p>
+                </md-list-item>
+            </spoiler>
+        </span>
+    </md-list>
+
+
+    <md-list ng-cloak>
+
+        <h2 class="md-no-sticky">Dependencies</h2>
+        <md-list-item ng-repeat="dependency in dependencies">
+            <p> {{ dependency.name }} </p>
+            <md-checkbox class="md-secondary" ng-disabled="dependency.disabled"
+                         ng-model="dependency.selected"></md-checkbox>
+        </md-list-item>
+
+    </md-list>
+
+
+    <p>
+        <md-button class="md-raised md-primary" ng-click="generate()">Generate</md-button>
+    </p>
+
+
+</div>

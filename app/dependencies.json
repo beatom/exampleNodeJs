@@ -1,0 +1,86 @@
+[
+  {
+    "name": "JQuery",
+    "bower-name": "jquery",
+    "paths": ["jquery/dist/jquery.min.js"],
+    "selected": true,
+    "disabled": true
+  },
+  {
+    "name": "Angularjs",
+    "paths": ["angular/angular.min.js"],
+    "bower-name": "angular",
+    "selected": true,
+    "disabled": true
+  },
+  {
+    "name": "Angular-route",
+    "paths": ["angular-route/angular-route.min.js"],
+    "bower-name": "angular-route",
+    "modules": ["ngRoute"],
+    "selected": true,
+    "disabled": true
+  },
+  {
+    "name": "Angular-animate",
+    "paths": ["angular-animate/angular-animate.min.js"],
+    "bower-name": "angular-animate",
+    "selected": true,
+    "disabled": true
+  },
+  {
+    "name": "Angular-aria",
+    "paths": ["angular-aria/angular-aria.min.js"],
+    "bower-name": "angular-aria",
+    "selected": true,
+    "disabled": true
+  },
+  {
+    "name": "Angular-material",
+    "paths": ["angular-material/angular-material.min.js"],
+    "bower-name": "angular-material",
+    "modules": ["ngMaterial"],
+    "css": ["angular-material/angular-material.min.css"],
+    "selected": true,
+    "disabled": true
+  },
+  {
+    "name": "Angular-datatables",
+    "bower-name": "angular-datatables",
+    "paths": ["angular-datatables/dist/angular-datatables.min.js"],
+    "modules": ["datatables"],
+    "selected": true,
+    "disabled": true
+  },
+  {
+    "name": "Font-awesome",
+    "bower-name": "components-font-awesome",
+    "css": ["components-font-awesome/css/font-awesome.min.css"],
+    "selected": true,
+    "disabled": true
+  },
+
+  {
+    "name": "Datatables",
+    "bower-name": "datatables",
+    "paths": ["datatables/media/js/jquery.dataTables.js"],
+    "selected": true,
+    "disabled": true
+  },
+
+  {
+    "name": "Ngstorage",
+    "bower-name": "ngstorage",
+    "paths": ["ngstorage/ngStorage.min.js"],
+    "modules": ["ngStorage"],
+    "selected": true,
+    "disabled": true
+  },
+
+
+  {
+    "name": "Underscore",
+    "paths": ["underscore/underscore-min.js"],
+    "bower-name": "underscore"
+  }
+]

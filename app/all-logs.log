@@ -1,0 +1,10 @@
+{"0":"16:30:30 GMT+0200 (Финляндия (зима)) module: alterServer, message: ","1":"Server was started on 1999","level":"info","message":"","timestamp":"2016-01-27T14:30:30.320Z"}
+{"0":"16:31:30 GMT+0200 (Финляндия (зима)) module: Reporter, message: ","1":"Uptime 1m","level":"info","message":"","timestamp":"2016-01-27T14:31:30.328Z"}
+{"0":"16:31:30 GMT+0200 (Финляндия (зима)) module: Reporter, message: ","1":"Errors 0","level":"info","message":"","timestamp":"2016-01-27T14:31:30.333Z"}
+{"0":"16:31:30 GMT+0200 (Финляндия (зима)) module: Reporter, message: ","1":"Warnings 0","level":"info","message":"","timestamp":"2016-01-27T14:31:30.338Z"}
+{"0":"16:32:30 GMT+0200 (Финляндия (зима)) module: Reporter, message: ","1":"Uptime 2m","level":"info","message":"","timestamp":"2016-01-27T14:32:30.357Z"}
+{"0":"16:32:30 GMT+0200 (Финляндия (зима)) module: Reporter, message: ","1":"Errors 0","level":"info","message":"","timestamp":"2016-01-27T14:32:30.360Z"}
+{"0":"16:32:30 GMT+0200 (Финляндия (зима)) module: Reporter, message: ","1":"Warnings 0","level":"info","message":"","timestamp":"2016-01-27T14:32:30.364Z"}
+{"0":"16:33:30 GMT+0200 (Финляндия (зима)) module: Reporter, message: ","1":"Uptime 3m","level":"info","message":"","timestamp":"2016-01-27T14:33:30.378Z"}
+{"0":"16:33:30 GMT+0200 (Финляндия (зима)) module: Reporter, message: ","1":"Errors 0","level":"info","message":"","timestamp":"2016-01-27T14:33:30.381Z"}
+{"0":"16:33:30 GMT+0200 (Финляндия (зима)) module: Reporter, message: ","1":"Warnings 0","level":"info","message":"","timestamp":"2016-01-27T14:33:30.384Z"}

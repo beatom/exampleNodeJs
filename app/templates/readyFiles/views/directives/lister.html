@@ -1,0 +1,72 @@
+<md-content>
+
+    <div layout="row">
+
+        <md-input-container flex="20" ng-repeat="filter in filters">
+            <label>{{filter.label}}</label>
+
+            <md-select ng-model="filter.model" ng-if="filter.type == 'select'">
+                <md-option 
+                    ng-repeat="(item, label) in filter.values" 
+                    value="{{item}}"
+                >
+                    {{label}}
+                </md-option>
+            </md-select>
+
+<!--             <md-icon 
+                ng-if="filter.type == 'text' && filter.icon" 
+                md-icon-set="material-icons">
+                    {{filter.icon}}
+            </md-icon> -->
+            <input 
+                ng-if="filter.type == 'text'" 
+                ng-model="filter.model"
+                ng-model-options="{debounce: 300}"
+                aria-label="{{filter.label}}" />
+
+        </md-input-container>
+
+        <md-input-container flex="20" ng-repeat="filter in columnFilters">
+            <label>{{filter.label}}</label>
+            <md-select ng-model="filter.model">
+                <md-option 
+                    ng-repeat="(item, label) in filter.values" 
+                    value="{{item}}"
+                >
+                    {{label}}
+                </md-option>
+            </md-select>
+        </md-input-container>
+    
+    </div>
+
+    <table
+        datatable=""        
+        dt-options="dtOptions"
+        dt-columns="dtColumns"
+        dt-column-defs="dtColumnDefs"
+        dt-instance="dtInstance"
+        class="row-border hover"
+    >
+    </table>
+
+    <div layout="row" layout-align="space-between">
+        <div class="paging-info">
+            <p>Showing {{conf.recordsDisplay}} of {{conf.recordsTotal}}</p>
+        </div>
+
+        <md-input-container>
+            <label>Show</label>
+            <md-select ng-model="dtLen">
+                <md-option 
+                    ng-repeat="len in ['10', '25', '50', '1']" 
+                    value="{{len}}"
+                >
+                    {{len}} items
+                </md-option>
+            </md-select>
+        </md-input-container>
+    </div>
+    
+</md-content>

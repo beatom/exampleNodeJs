@@ -1,0 +1,40 @@
+<md-toolbar class="md-whiteframe-z2 main-nav md-hue-3">
+    <div class="md-toolbar-tools">
+        <h2><a ng-href="/#/">Athena</a></h2>
+        
+        <span flex></span>
+        <div ng-show="!loggedIn()" hide-sm hide-md show-gt-md>
+            <md-button ng-click="access()" aria-label="{{ button.access }}">
+                {{ button.access }}
+            </md-button>
+            <md-button ng-click="register()" aria-label="{{ button.register }}">
+                {{ button.register }}
+            </md-button>
+        </div>            
+
+        <md-menu ng-show="loggedIn()" hide-sm hide-md show-gt-md>
+            <md-button class="md-icon-button" aria-label="My Account" ng-click="$mdOpenMenu($event)">
+                <md-icon md-font-set="material-icons">account_circle</md-icon>
+            </md-button>
+            <md-menu-content width="4">
+                <md-menu-item>
+                    <md-button ng-click="profile()">
+                        <md-icon md-font-set="material-icons" md-menu-align-target>person</md-icon>
+                        Profile
+                    </md-button>
+                </md-menu-item>
+
+                <md-menu-item>
+                    <md-button ng-click="logout()">
+                        <md-icon md-font-set="material-icons" md-menu-align-target>exit_to_app</md-icon>
+                        Logout
+                    </md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
+
+        <md-button class="md-icon-button" ng-click="toggleRight()" aria-label="Toolbar" hide-gt-md>
+            <md-icon md-font-set="material-icons">menu</md-icon>
+        </md-button>
+    </div>
+</md-toolbar>

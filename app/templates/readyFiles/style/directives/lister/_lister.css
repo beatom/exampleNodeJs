@@ -1,0 +1,70 @@
+/* line 1, ../_lister.scss */
+.dataTables_wrapper {
+  margin-bottom: -54px;
+}
+
+.dataTables_wrapper .dataTable {
+  width: 100% !important;
+}
+/* line 5, ../_lister.scss */
+.dataTables_wrapper table.dataTable.no-footer {
+  border-bottom: 2px solid #ddd;
+}
+/* line 9, ../_lister.scss */
+.dataTables_wrapper table.dataTable thead th,
+.dataTables_wrapper table.dataTable thead td {
+  border-bottom: 2px solid #ddd;
+  color: #999;
+  font-size: 14px;
+  padding: 8px;
+}
+/* line 16, ../_lister.scss */
+.dataTables_wrapper table.dataTable thead th.sorting,
+.dataTables_wrapper table.dataTable thead td.sorting {
+  background-image: none;
+}
+/* line 22, ../_lister.scss */
+.dataTables_wrapper table.dataTable tbody td.menu {
+  padding: 3px;
+}
+/* line 27, ../_lister.scss */
+.dataTables_wrapper .dataTables_paginate {
+  float: none;
+  text-align: center;
+  padding-top: 24px;
+}
+/* line 32, ../_lister.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 0.3em 0.6em;
+  border: none;
+  vertical-align: middle;
+}
+/* line 37, ../_lister.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  border: none;
+  background-image: none;
+  background-color: #cddc39;
+  color: #fff !important;
+}
+/* line 44, ../_lister.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  border: none;
+  background-image: none;
+  background-color: #cddc39;
+  color: #fff !important;
+}
+/* line 51, ../_lister.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button.next, .dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+  font-family: 'Material Icons';
+  font-size: 24px;
+}
+
+/* line 61, ../_lister.scss */
+.lister-text-filter md-icon {
+  padding-top: 18px;
+}
+
+/* line 66, ../_lister.scss */
+.paging-info {
+  padding-top: 10px;
+}
